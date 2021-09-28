@@ -8,7 +8,7 @@ const BookItem = ({
     <p>{title}</p>
     <p>{author}</p>
     <p>{categories}</p>
-
+    <button type="button">remove</button>
   </li>
 );
 

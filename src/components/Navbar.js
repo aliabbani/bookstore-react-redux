@@ -27,7 +27,6 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <p>icons</p>
     </nav>
   );
 };
