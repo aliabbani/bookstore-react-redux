@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import { v4 as uuidv4 } from 'uuid';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/books';
 
-function InputBook({ addBookProps }) {
+function InputBook() {
+  const dispatch = useDispatch();
   const [inputBook, setInputBook] = useState({
     title: '',
     author: '',
   });
 
   const onChange = (e) => {
-    setInputBook({
+    setInputBook((prevState) => ({
+      ...prevState,
       [e.target.name]: e.target.value,
-    });
+    }));
   };
 
   const handleSubmit = (e) => {
-    const { title } = inputBook;
     e.preventDefault();
-    if (title.trim()) {
-      addBookProps(title);
-      setInputBook({
-        title: '',
-      });
-    } else {
-      alert('Please write item');
-    }
+    const payload = {
+      ...inputBook,
+      id: uuidv4(),
+    };
+    dispatch(addBook(payload));
   };
 
   return (
@@ -37,15 +37,18 @@ function InputBook({ addBookProps }) {
           value={inputBook.title}
           onChange={onChange}
         />
+        <input
+          name="author"
+          type="text"
+          placeholder="Book author"
+          value={inputBook.author}
+          onChange={onChange}
+        />
         <input type="text" placeholder="Category" />
         <button type="button">ADD BOOK</button>
       </form>
     </div>
   );
 }
-
-InputBook.propTypes = {
-  addBookProps: PropTypes.func.isRequired,
-};
 
 export default InputBook;
