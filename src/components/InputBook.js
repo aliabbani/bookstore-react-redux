@@ -8,6 +8,7 @@ function InputBook() {
   const [inputBook, setInputBook] = useState({
     title: '',
     author: '',
+    category: '',
   });
 
   const onChange = (e) => {
@@ -25,27 +26,32 @@ function InputBook() {
     };
     dispatch(addBook(payload));
   };
-
+  const { title, author, category } = inputBook;
   return (
     <div>
       <h2>ADD NEW BOOK</h2>
-      <form onSubmit={handleSubmit}>
+      <form>
         <input
           name="title"
           type="text"
           placeholder="Book title"
-          value={inputBook.title}
+          value={title}
           onChange={onChange}
         />
         <input
           name="author"
           type="text"
           placeholder="Book author"
-          value={inputBook.author}
+          value={author}
           onChange={onChange}
         />
-        <input type="text" placeholder="Category" />
-        <button type="button">ADD BOOK</button>
+        <select name="category" id="categories" value={category} onChange={onChange}>
+          <option value="First Category">first category</option>
+          <option value="Second Category">second category</option>
+          <option value="Third Category">third category</option>
+          <option value="Fourth Category">fourth category</option>
+        </select>
+        <button type="button" onClick={handleSubmit}>ADD BOOK</button>
       </form>
     </div>
   );
