@@ -1,20 +1,28 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-const BookItem = ({
-  id, title, author,
-}) => (
-  <li key={id}>
-    <p>{title}</p>
-    <p>{author}</p>
-    <button type="button">remove</button>
-  </li>
+const BookItem = (props) => (
+  <div>
+    <span>
+      <li>
+        {props.book.title}
+        {' '}
+        <br />
+        {props.book.author}
+        {' '}
+        <br />
+        <button type="button" onClick={() => props.deleteBookProps(props.book.id)}>
+          Delete
+        </button>
+      </li>
+    </span>
+  </div>
 );
 
 BookItem.propTypes = {
-  id: propTypes.number.isRequired,
-  title: propTypes.string.isRequired,
-  author: propTypes.string.isRequired,
+  deleteBookProps: PropTypes.func.isRequired,
 };
 
 export default BookItem;
