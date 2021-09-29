@@ -1,27 +1,27 @@
-// const ADD_BOOK = 'bookStore/books/ADD-BOOK';
-// const REMOVE_BOOK = 'bookStore/books/REMOVE-BOOK';
+const ADD_BOOK = 'bookStore/books/ADD-BOOK';
+const REMOVE_BOOK = 'bookStore/books/REMOVE-BOOK';
 
-// const initialState = [];
+const initialState = [];
 
-// export const addBook = (payload) => ({
-//   type: ADD_BOOK,
-//   payload,
-// });
+export const addBook = (payload) => ({
+  type: ADD_BOOK,
+  payload,
+});
 
-// export const removeBook = (payload) => ({
-//   type: REMOVE_BOOK,
-//   payload,
-// });
+export const removeBook = (payload) => ({
+  type: REMOVE_BOOK,
+  payload,
+});
 
-// const reducer = (state = initialState, action) => {
-//   switch (action.type) {
-//     case ADD_BOOK:
-//       return [...state, action.payload];
-//     case REMOVE_BOOK:
-//       return state.filter((book) => book.id !== action.payload);
-//     default:
-//       return state;
-//   }
-// };
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case ADD_BOOK:
+      return [...state, action.payload];
+    case REMOVE_BOOK:
+      return state.filter((book) => book.id !== action.payload);
+    default:
+      return state;
+  }
+};
 
-// export default reducer;
+export default reducer;
