@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import BookContainer from './components/BookContainer';
 import store from './redux/configureStore';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
