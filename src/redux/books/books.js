@@ -8,17 +8,19 @@ export const addBook = (payload) => ({
   payload,
 });
 
-export const removeBook = (payload) => ({
+export const removeBook = (id) => ({
   type: REMOVE_BOOK,
-  payload,
+  id,
 });
 
 const reducer = (state = initialState, action) => {
-  switch (action.type) {
+  const { id, type, payload } = action;
+  switch (type) {
     case ADD_BOOK:
-      return [...state, action.payload];
+      console.log('hello add');
+      return [...state, payload];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload);
+      return state.filter((book) => book.id !== id);
     default:
       return state;
   }

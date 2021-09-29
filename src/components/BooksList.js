@@ -1,17 +1,15 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import PropTypes from 'prop-types';
 import BookItem from './BookItem';
 
-function BooksList(props) {
+function BooksList({ books, deleteBookProps }) {
   return (
     <ul>
-      {props.books.map((book) => (
+      {books.map((book) => (
         <BookItem
           key={book.id}
           book={book}
-          deleteBookProps={props.deleteBookProps}
+          deleteBookProps={deleteBookProps}
         />
       ))}
     </ul>
@@ -20,6 +18,7 @@ function BooksList(props) {
 
 BooksList.propTypes = {
   deleteBookProps: PropTypes.func.isRequired,
+  books: PropTypes.instanceOf(Array).isRequired,
 };
 
 export default BooksList;

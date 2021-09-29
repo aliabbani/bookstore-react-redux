@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-function InputBook(props) {
+function InputBook({ addBookProps }) {
   const [inputBook, setInputBook] = useState({
     title: '',
     author: '',
@@ -14,9 +14,10 @@ function InputBook(props) {
   };
 
   const handleSubmit = (e) => {
+    const { title } = inputBook;
     e.preventDefault();
-    if (inputBook.title.trim()) {
-      props.addBookProps(inputBook.title);
+    if (title.trim()) {
+      addBookProps(title);
       setInputBook({
         title: '',
       });
