@@ -28,20 +28,3 @@ function BookContainer() {
 }
 
 export default BookContainer;
-// const delBook = (id) => {
-//   setBookOri({
-//     books: [
-//       ...BookOri.books.filter((book) => book.id !== id),
-//     ],
-//   });
-// };
-
-// const addBookItem = (title) => {
-//   const newBook = {
-//     id: uuidv4(),
-//     title,
-//   };
-//   setBookOri({
-//     books: [...BookOri.books, newBook],
-//   });
-// };
