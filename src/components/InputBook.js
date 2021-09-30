@@ -26,6 +26,7 @@ function InputBook() {
     };
     dispatch(addBook(payload));
   };
+
   const { title, author, category } = inputBook;
   return (
     <div>
