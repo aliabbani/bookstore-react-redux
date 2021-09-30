@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaUserAlt } from 'react-icons/fa';
 
 const Navbar = () => {
   const links = [
@@ -17,16 +18,17 @@ const Navbar = () => {
 
   return (
     <nav className="navBar">
-      <ul>
+      <ul className="left-nav">
         <h1>BookStore CMS</h1>
         {links.map((link) => (
-          <li key={link.id}>
-            <NavLink to={link.path} activeClassName="active-link" exact>
+          <li className="left-nav-li" key={link.id}>
+            <NavLink to={link.path} className="left-nav-a" activeClassName="active-link" exact>
               {link.text}
             </NavLink>
           </li>
         ))}
       </ul>
+      <div className="right-nav"><FaUserAlt /></div>
     </nav>
   );
 };

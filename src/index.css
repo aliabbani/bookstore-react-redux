@@ -1,3 +1,42 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Montserrat', 'Times New Roman', Times, serif;
+  background-color: #f5f6fa;
+}
+
+.navBar {
+  background-color: #fff;
+  padding: 1.681279vh 7.24vw 2.32128vh 7.32vh;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.left-nav {
+  display: flex;
+  align-items: baseline;
+  margin: 0;
+  gap: 2vw;
+}
+
+.left-nav h1 {
+  color: #0290ff;
+}
+
+.left-nav-li {
+  list-style: none;
+}
+
+.left-nav-li a {
+  text-decoration: none;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+}
+
+.active-link {
+  color: #121212;
+  text-decoration: underline;
+}
+
+.right-nav {
+  color: #0290ff;
 }
