@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaUserAlt } from 'react-icons/fa';
+import './Navbar.css';
 
 const Navbar = () => {
   const links = [
