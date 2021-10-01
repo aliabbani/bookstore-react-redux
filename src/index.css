@@ -79,9 +79,17 @@ body {
   color: #121212;
 }
 
+.list-left-title,
+.list-left-author,
+.list-left-button,
+.list-left-button2,
+.list-right-comp,
+.list-right-comp1 {
+  font-family: Roboto Slab, Arial, sans-serif;
+}
+
 .list-left-title {
   font-size: 1.375rem;
-  font-family: Roboto Slab, Arial, sans-serif;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -92,7 +100,6 @@ body {
 
 .list-left-author {
   font-size: 0.875rem;
-  font-family: Roboto Slab, Arial, sans-serif;
   font-weight: 300;
   color: #4386bf;
 }
@@ -107,7 +114,6 @@ body {
   width: 4.563rem;
   height: 1.188rem;
   margin: 0;
-  font-family: Roboto Slab, Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
@@ -120,29 +126,32 @@ body {
 
 .list-left-button2 {
   padding-left: 1vw;
+  border-left: 2px solid #e8e8e8;
 }
 
 .list-left-button-remove {
   border-top: none;
   border-bottom: none;
+  border-right: none;
   padding: 0 1vw;
   background-color: white;
   color: #4386bf;
+  border-color: #e8e8e8;
 }
 
 .list-right {
   display: flex;
   gap: 3vw;
+  padding-right: 8vw;
 }
 
 .list-right-2 {
   border-left: 1px solid #e8e8e8;
-  padding-left: 3vw;
+  padding-left: 5vw;
 }
 
 .list-right-comp {
   opacity: 0.5;
-  font-family: Roboto Slab, Arial, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   color: #121212;
@@ -150,7 +159,6 @@ body {
 
 .list-right-comp1 {
   list-style: none;
-  font-family: Roboto Slab, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: -0.4px;
@@ -158,6 +166,8 @@ body {
 }
 
 .list-right-button {
+  width: 8.938rem;
+  height: 1.725rem;
   border-radius: 3px;
   background-color: #0290ff;
   border-color: #0290ff;
@@ -170,14 +180,19 @@ body {
 }
 
 .oval-2 {
-  width: 4.25rem;
-  height: 4.25rem;
+  width: 3.9rem;
+  height: 3.9rem;
+  margin-top: 1vh;
   border-style: solid;
   border-width: 5px;
   color: #379cf6;
   border-top-color: #ddd;
   border-image-slice: 1;
   border-radius: 50%;
+}
+
+.oval-3 {
+  padding-right: 2vw;
 }
 
 .percentage {
