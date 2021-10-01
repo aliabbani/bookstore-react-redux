@@ -29,23 +29,24 @@ function InputBook() {
 
   const { title, category } = inputBook;
   return (
-    <div>
-      <h2>ADD NEW BOOK</h2>
-      <form>
+    <div className="input-container">
+      <h2 className="input-h2">ADD NEW BOOK</h2>
+      <form className="input-form">
         <input
           name="title"
+          className="input-title"
           type="text"
           placeholder="Book title"
           value={title}
           onChange={onChange}
         />
-        <select name="category" id="categories" value={category} onChange={onChange}>
-          <option value="First Category">first category</option>
-          <option value="Second Category">second category</option>
-          <option value="Third Category">third category</option>
-          <option value="Fourth Category">fourth category</option>
+        <select name="category" className="input-category" id="categories" value={category} onChange={onChange}>
+          <option value="First Category">First Category</option>
+          <option value="Second Category">Second Category</option>
+          <option value="Third Category">Third Category</option>
+          <option value="Fourth Category">Fourth Category</option>
         </select>
-        <button type="button" onClick={handleSubmit}>ADD BOOK</button>
+        <button type="button" className="input-button" onClick={handleSubmit}>ADD BOOK</button>
       </form>
     </div>
   );

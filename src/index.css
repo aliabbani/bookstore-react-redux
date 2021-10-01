@@ -2,3 +2,51 @@ body {
   font-family: 'Montserrat', 'Times New Roman', Times, serif;
   background-color: #f5f6fa;
 }
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.681279vh 7.24vw 2.32128vh 7.32vh;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #e8e8e8;
+}
+
+.input-h2 {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.input-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+.input-title {
+  width: 41.5rem;
+  height: 1.5rem;
+}
+
+.input-category {
+  width: 17.813rem;
+  height: 1.9rem;
+}
+
+.input-button {
+  width: 11.5rem;
+  height: 1.9rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border-color: #0290ff;
+}
