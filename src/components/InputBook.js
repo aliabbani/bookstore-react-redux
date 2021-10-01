@@ -8,7 +8,7 @@ function InputBook() {
   const [inputBook, setInputBook] = useState({
     title: '',
     author: '',
-    category: '',
+    category: 'First Category',
   });
 
   const onChange = (e) => {
