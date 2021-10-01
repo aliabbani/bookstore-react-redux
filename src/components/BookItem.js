@@ -28,13 +28,13 @@ const BookItem = ({
         <div className="list-right-1">
           <div className="oval-2" />
           <div className="oval-3">
-            <p>64%</p>
-            <p>Completed</p>
+            <p className="percentage">64%</p>
+            <p className="completed">Completed</p>
           </div>
         </div>
         <div className="list-right-2">
           <li className="list-right-comp">Current Chapter</li>
-          <li className="list-right-comp">Chapter 17</li>
+          <li className="list-right-comp1">Chapter 17</li>
           <button type="button" className="list-right-button">Update progress</button>
         </div>
       </div>

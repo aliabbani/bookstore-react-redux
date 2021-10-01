@@ -134,6 +134,36 @@ body {
   gap: 3vw;
 }
 
+.list-right-2 {
+  border-left: 1px solid #e8e8e8;
+  padding-left: 3vw;
+}
+
+.list-right-comp {
+  opacity: 0.5;
+  font-family: Roboto Slab, Arial, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #121212;
+}
+
+.list-right-comp1 {
+  list-style: none;
+  font-family: Roboto Slab, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.list-right-button {
+  border-radius: 3px;
+  background-color: #0290ff;
+  border-color: #0290ff;
+  color: #fff;
+  margin-top: 2vh;
+}
+
 .list-right-1 {
   display: flex;
 }
@@ -144,6 +174,28 @@ body {
   border-style: solid;
   border-width: 5px;
   color: #379cf6;
+  border-top-color: #ddd;
   border-image-slice: 1;
   border-radius: 50%;
+}
+
+.percentage {
+  font-size: 2rem;
+  color: #121212;
+  margin: 0;
+  padding-top: 2vh;
+  padding-left: 2vw;
+}
+
+.completed {
+  margin: 0;
+  opacity: 0.5;
+  font-size: 0.875rem;
+  color: #121212;
+  padding-left: 2vw;
+}
+
+.under {
+  color: #0290ff;
+  font-weight: 700;
 }

@@ -1,4 +1,4 @@
 import React from 'react';
 
-const Categories = () => <div>Under construction</div>;
+const Categories = () => <div className="under">Under construction</div>;
 export default Categories;
