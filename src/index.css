@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   border-top: 2px solid #e8e8e8;
+  padding-bottom: 20vh;
 }
 
 .input-h2 {
