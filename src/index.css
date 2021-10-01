@@ -50,3 +50,30 @@ body {
   color: #fff;
   border-color: #0290ff;
 }
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  padding: 2vh 2vw;
+}
+
+/* .list-left {
+  padding-left: 2vw;
+} */
+
+.list-left-comp,
+.list-right-comp {
+  list-style: none;
+}
+
+.list-right {
+  display: flex;
+}

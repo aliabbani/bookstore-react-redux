@@ -5,28 +5,36 @@ import { removeBook } from '../redux/books/books';
 
 const BookItem = ({
   book: {
-    title, author, category, id,
+    title, category, id,
   },
 }) => {
   const dispatch = useDispatch();
   return (
-    <div>
-      <span>
-        <li>
-          {title}
-          {' '}
-          <br />
-          {author}
-          {' '}
-          <br />
-          {category}
-          {' '}
-          <br />
-          <button type="button" onClick={() => dispatch(removeBook(id))}>
-            Delete
-          </button>
-        </li>
-      </span>
+    <div className="box">
+      <div className="list-left">
+        <li className="list-left-comp">{title}</li>
+        <li className="list-left-comp">Author</li>
+        <li className="list-left-comp">{category}</li>
+        <button type="button" className="list-left-button">Comments</button>
+        <button type="button" className="list-left-button-remove" onClick={() => dispatch(removeBook(id))}>
+          Delete
+        </button>
+        <button type="button" className="list-left-button">Edit</button>
+      </div>
+      <div className="list-right">
+        <div>
+          <div>circle</div>
+          <div>
+            <p>64%</p>
+            <p>Completed</p>
+          </div>
+        </div>
+        <div className="list-right-2">
+          <li className="list-right-comp">Current Chapter</li>
+          <li className="list-right-comp">Chapter 17</li>
+          <button type="button" className="list-right-button">Update progress</button>
+        </div>
+      </div>
     </div>
   );
 };
