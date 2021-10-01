@@ -12,9 +12,9 @@ const BookItem = ({
   return (
     <div className="box">
       <div className="list-left">
+        <li className="list-left-comp">{category}</li>
         <li className="list-left-comp">{title}</li>
         <li className="list-left-comp">Author</li>
-        <li className="list-left-comp">{category}</li>
         <button type="button" className="list-left-button">Comments</button>
         <button type="button" className="list-left-button-remove" onClick={() => dispatch(removeBook(id))}>
           Delete
@@ -22,9 +22,9 @@ const BookItem = ({
         <button type="button" className="list-left-button">Edit</button>
       </div>
       <div className="list-right">
-        <div>
-          <div>circle</div>
-          <div>
+        <div className="list-right-1">
+          <div className="oval-2" />
+          <div className="oval-3">
             <p>64%</p>
             <p>Completed</p>
           </div>

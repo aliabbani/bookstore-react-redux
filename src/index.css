@@ -55,6 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2vh;
+  padding-left: 0;
 }
 
 .box {
@@ -76,4 +77,19 @@ body {
 
 .list-right {
   display: flex;
+  gap: 3vw;
+}
+
+.list-right-1 {
+  display: flex;
+}
+
+.oval-2 {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-style: solid;
+  border-width: 5px;
+  color: #379cf6;
+  border-image-slice: 1;
+  border-radius: 50%;
 }
