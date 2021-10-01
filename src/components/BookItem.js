@@ -13,14 +13,14 @@ const BookItem = ({
     <div className="box">
       <div className="list-left">
         <li className="list-left-comp list-left-category">{category}</li>
-        <li className="list-left-comp list-left-title">{title}</li>
-        <li className="list-left-comp list-left-author">Author</li>
+        <li className="list-left-comp list-left-title font-roboto">{title}</li>
+        <li className="list-left-comp list-left-author font-roboto">Author</li>
         <div className="list-left-buttons">
-          <p className="list-left-button ">Comments</p>
+          <p className="list-left-button font-roboto">Comments</p>
           <button type="button" className="list-left-button-remove" onClick={() => dispatch(removeBook(id))}>
             Delete
           </button>
-          <p className="list-left-button list-left-button2">Edit</p>
+          <p className="list-left-button list-left-button2 font-roboto">Edit</p>
 
         </div>
       </div>
@@ -33,8 +33,8 @@ const BookItem = ({
           </div>
         </div>
         <div className="list-right-2">
-          <li className="list-right-comp">Current Chapter</li>
-          <li className="list-right-comp1">Chapter 17</li>
+          <li className="list-right-comp font-roboto">Current Chapter</li>
+          <li className="list-right-comp1 font-roboto">Chapter 17</li>
           <button type="button" className="list-right-button">Update progress</button>
         </div>
       </div>

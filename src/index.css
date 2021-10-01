@@ -79,16 +79,7 @@ body {
   color: #121212;
 }
 
-/* .list-left-title,
-.list-left-author,
-.list-left-button,
-.list-left-button2,
-.list-right-comp,
-.list-right-comp1 {
-  font-family: Roboto Slab, Arial, sans-serif;
-} */
-
-.font-family {
+.font-roboto {
   font-family: Roboto Slab, Arial, sans-serif;
 }
 
