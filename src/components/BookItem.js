@@ -12,14 +12,17 @@ const BookItem = ({
   return (
     <div className="box">
       <div className="list-left">
-        <li className="list-left-comp">{category}</li>
-        <li className="list-left-comp">{title}</li>
-        <li className="list-left-comp">Author</li>
-        <button type="button" className="list-left-button">Comments</button>
-        <button type="button" className="list-left-button-remove" onClick={() => dispatch(removeBook(id))}>
-          Delete
-        </button>
-        <button type="button" className="list-left-button">Edit</button>
+        <li className="list-left-comp list-left-category">{category}</li>
+        <li className="list-left-comp list-left-title">{title}</li>
+        <li className="list-left-comp list-left-author">Author</li>
+        <div className="list-left-buttons">
+          <p className="list-left-button ">Comments</p>
+          <button type="button" className="list-left-button-remove" onClick={() => dispatch(removeBook(id))}>
+            Delete
+          </button>
+          <p className="list-left-button list-left-button2">Edit</p>
+
+        </div>
       </div>
       <div className="list-right">
         <div className="list-right-1">

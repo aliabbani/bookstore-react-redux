@@ -66,13 +66,67 @@ body {
   padding: 2vh 2vw;
 }
 
-/* .list-left {
-  padding-left: 2vw;
-} */
-
 .list-left-comp,
 .list-right-comp {
   list-style: none;
+}
+
+.list-left-category {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #121212;
+}
+
+.list-left-title {
+  font-size: 1.375rem;
+  font-family: Roboto Slab, Arial, sans-serif;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.list-left-author {
+  font-size: 0.875rem;
+  font-family: Roboto Slab, Arial, sans-serif;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.list-left-buttons {
+  display: flex;
+  padding-top: 3vh;
+}
+
+.list-left-button,
+.list-left-button2 {
+  width: 4.563rem;
+  height: 1.188rem;
+  margin: 0;
+  font-family: Roboto Slab, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  padding-right: 1vw;
+}
+
+.list-left-button {
+  padding-right: 1vw;
+}
+
+.list-left-button2 {
+  padding-left: 1vw;
+}
+
+.list-left-button-remove {
+  border-top: none;
+  border-bottom: none;
+  padding: 0 1vw;
+  background-color: white;
+  color: #4386bf;
 }
 
 .list-right {
