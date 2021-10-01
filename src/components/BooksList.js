@@ -11,7 +11,7 @@ function BooksList() {
 
   const books = useSelector((state) => state.books);
   return (
-    <ul>
+    <ul className="list-container">
       {books.map((book) => (
         <BookItem
           key={book.id}

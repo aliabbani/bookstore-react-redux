@@ -1,0 +1,51 @@
+.navBar {
+  background-color: #fff;
+  padding: 1.681279vh 7.24vw 2.32128vh 7.32vh;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.left-nav {
+  display: flex;
+  align-items: baseline;
+  margin: 0;
+  gap: 2vw;
+}
+
+.left-nav h1,
+.left-nav-li {
+  font-family: 'Montserrat', 'Times New Roman', Times, serif;
+}
+
+.left-nav h1 {
+  color: #0290ff;
+  font-weight: 900;
+  font-size: 1.375rem;
+}
+
+.left-nav-li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 0.813rem;
+}
+
+.left-nav-li a {
+  text-decoration: none;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+}
+
+.left-nav-a {
+  color: #c5c5c5;
+}
+
+.active-link {
+  color: #121212;
+  text-decoration: underline;
+}
+
+.right-nav {
+  color: #0290ff;
+}

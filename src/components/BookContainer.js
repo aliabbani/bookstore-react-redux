@@ -11,7 +11,7 @@ function BookContainer() {
       <Navbar />
       <Switch>
         <Route exact path="/">
-          <div>
+          <div className="book-container">
             <BooksList />
             <InputBook />
           </div>
