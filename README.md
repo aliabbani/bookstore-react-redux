@@ -1,5 +1,7 @@
 # bookstore-react-redux:
 
+![screenshot](./src/images/Capture.PNG)
+
 This is a Book store web application. Created following [this Design](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378). 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and Redux Library.
 
@@ -39,7 +41,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Live Demo
 
-Not deployed yet
+[Live Demo](https://bookstore-abbani.herokuapp.com/)
 
 ## Author
 
